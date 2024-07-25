@@ -24,7 +24,7 @@ class ServicioController extends Controller
         //Validar datos
         $datos = $request->validate([
             'nombre' => ['required','string','max:200'],
-            'descripcion' => ['nubable', 'string','max:250'],
+            'descripcion' => ['nullable', 'string','max:250'],
         ]);
         //Guardar datos
 
@@ -55,7 +55,7 @@ class ServicioController extends Controller
         //Validar datos
         $datos = $request->validate([
             'nombre' => ['required','string','max:200'],
-            'descripcion' => ['nubable', 'string','max:250'],
+            'descripcion' => ['nullable', 'string','max:250'],
         ]);
 
         //Actualizar  datos
